@@ -1,0 +1,81 @@
+.scroll-container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+    z-index: 100;
+    
+   
+  }
+
+  
+  .content {
+    width: 800px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: calc(100% - 40px);
+    height: 100%;
+    overflow: hidden;
+    padding-right: 20px;
+    border-radius: 10%;
+    background: white;
+    box-shadow: 5.446px 8.387px 232.5px 17.5px rgba(157, 185, 198, 0.39);
+    padding: 20px; 
+  }
+  .section__inner{
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    font-family: "DINPro";
+    padding-left: 50px;
+    
+  }
+.subtitles{
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    row-gap:0px;
+    color: rgb(36, 36, 36);
+    text-transform: uppercase;
+    line-height: 4.074;
+    max-height: 300px;
+}
+.subtitles__item{
+    max-height: 50px;
+}
+  .custom-scrollbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .scrollbar-track {
+    flex: 1;
+    background: #000; /* Черный цвет полоски */
+    border-radius: 10px;
+    margin: 5px;
+    position: relative;
+    cursor: pointer; /* Улучшаем взаимодействие */
+  }
+  
+  .scrollbar-thumb {
+    width: 40px;
+    height: 30%;
+    background: #ff69b4; /* Розовый цвет ползунка */
+    border-radius: 20px;
+    cursor: grab; /* Изменяем курсор для улучшения взаимодействия */
+    position: absolute;
+    top: 0;
+    left:-10px;
+    touch-action: none; /* Отключаем стандартные действия при касании */
+  }
+  
+  .scrollbar-thumb.active {
+    cursor: grabbing; /* Изменяем курсор при перетаскивании */
+  }

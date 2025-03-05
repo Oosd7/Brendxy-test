@@ -1,0 +1,129 @@
+:root{
+    max-width: 2050px;
+    --ball-width-1: 125px;
+    --ball-height-1: 114px;
+    --ball-width-2: 221px;
+    --ball-height-2: 227px;
+    --ball-width-3: 146px;
+    --ball-height-3: 142px;
+    --ball-width-4: 455px;
+    --ball-height-4: 253px;
+}
+.section {
+    position: relative;
+    flex: 0 0 100vw;
+    height: 100%;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    max-width: 2050px;
+    max-height: 1536px;
+}
+.section__inner{
+    display: flex;
+    flex-direction: column;
+}
+.blue-ball{
+    position: absolute;
+
+    
+}
+
+.static-object{
+        position: absolute;
+        z-index: 10;
+
+}
+.subtitle {
+    display: flex;
+    font-size: 54px;
+    font-family: "DINPro";
+    color: rgb(36, 36, 36);
+    text-transform: uppercase;
+    line-height: 4.074;
+    text-align: left;
+    position: absolute;
+    left: 10px;
+    top: -150px;
+    z-index: 7;
+  }
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: absolute;
+    top:450px;
+    left:135px;
+    
+  }
+.title__spans{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-size: 29.691px;
+    font-family: "Gilroy-Light";
+    color: rgb(23, 23, 23);
+    text-transform: uppercase;
+    line-height: 1.073;
+    text-align: left;
+    font-size: 218px;
+    row-gap: 45px;
+}
+.title__button{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    width: 100%;
+    column-gap: 100px;
+
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+   
+    
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 40px;
+    }
+    .subtitle{
+        font-size: 40px;
+        left:0;
+        top:-145px;
+    }
+    .button{
+        width: 150px;
+        height: 150px;
+    }
+    .title{
+        width: 450px;
+        top:270px;
+    }
+    .title__spans {
+      font-size: 100px;
+      row-gap: 10px;
+      width: auto;
+    
+    }
+    .title__button{
+        display: flex;
+        align-items: center;
+        width: 75px;
+        height: 75px;
+        width: 100%;
+        column-gap: 30px;
+    
+    }
+    .blue-ball {
+        width: 100px;
+        height: 100px;
+      }
+/*   
+    .button {
+      padding: 15px 30px;
+      font-size: 20px;
+    } */
+  }

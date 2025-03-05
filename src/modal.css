@@ -1,0 +1,135 @@
+.modal-overlay {
+    position: fixed;
+    font-family: 'DINPro';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+  }
+.modal-body__content-el{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+
+}
+  .modal-content {
+    display: flex;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1500px;
+    height: 80%;
+    margin-left: 200px;
+  }
+  
+  .bottle {
+    position: absolute;
+  }
+  
+  .dynamic-balls {
+    position: relative;
+    z-index: 10022;
+  }
+  
+  .content-container {
+    flex: 1;
+    background: white;
+    padding-left: 150px;
+    margin-right: 30px;
+    border-radius: 15%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 1100px;
+    height: 100%;
+    overflow-y: auto;
+    position: relative;
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 36px;
+    cursor: pointer;
+    color: black;
+    z-index: 1000;
+  }
+
+  .modal-header {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 28px;
+    text-transform: uppercase;
+  
+  }
+  .model-header__subtitle{
+    margin-bottom: 15px;
+  }
+  .model-header__title{
+    margin-top:-10px;
+    font-size: 90px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    text-align: left;
+    
+      
+  }
+  .modal-header  {
+    margin-bottom:-10px;
+
+  }
+.modal-body__content{
+    margin-right: 5px;
+    display:flex;
+    flex-direction: column;
+    row-gap: 0px;
+    margin-top: -10px;
+}
+  .modal-body {
+    display: flex;
+  }
+.content__order{
+    font-family:'Gilroy-Light';
+    color: #8cc9e8;
+    font-size: 24px;
+
+}
+  .modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .nav-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin: 0 10px;
+    z-index: 1000;
+  }
+  
+  .indicators {
+    display: flex;
+    align-items: center;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  
+  .indicator.active {
+    background-color: hotpink;
+  }

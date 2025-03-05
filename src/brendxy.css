@@ -1,0 +1,96 @@
+.brendxy{
+    width: 800px;
+    max-height:800px;
+    margin-top:80px;
+    margin-left: 270px;
+    padding-left: 50px;
+    display: flex;
+    row-gap: 60px;
+    flex-direction: column;
+    font-family: 'DINPro';
+    font-size: 28px;
+}
+.brendxy__inner{
+    display: flex;
+    column-gap: 50px;
+    max-width: 600px;
+}
+.brendxy__inner-box1{
+    z-index: 0;
+    position: relative;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 20%;
+    background: white;
+    box-shadow: 5.446px 8.387px 232.5px 17.5px rgba(157, 185, 198, 0.39);
+    padding: 40px; 
+    padding-left:90px;
+    padding-right: 40px;
+    margin-left:-70px;
+}
+.brendxy__inner-box2{
+    z-index: 0;
+    position: relative;
+    max-width: 800px;
+    border-radius: 20%;
+    background: white;
+    box-shadow: 5.446px 8.387px 232.5px 17.5px rgba(157, 185, 198, 0.39);
+    padding: 40px;
+    max-height: 165px;
+
+}
+.brendxy__inner-box2-element{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+.brendxy__button{
+    width: 180px;
+    z-index: 1000;
+
+}
+
+.brendxy__inner-box1::before{
+    content: '';
+    position: absolute;
+    background: url(../icons/icon1.png) no-repeat center/contain;
+    width: 100px;
+    height: 100px;
+    top:-65px;
+    left:90px;
+}
+.brendxy__inner-box2::before{
+    content: '';
+    position: absolute;
+    background: url(../icons/icon2.png) no-repeat center/contain;
+    width: 100px;
+    height: 100px;
+    top:-65px;
+    left:40px;
+}
+.banner{
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    top:20%;
+    left: 30%;
+    width: 600px;
+    height: 200px;
+    font-family: 'Gilroy-Light';
+
+    text-transform: uppercase;
+}
+.banner__title{
+    font-size: 134px;
+}
+.banner__subtitle{
+    font-size: 37px;
+    margin-bottom:-20px
+}
+.bottle{
+    position: absolute;
+    z-index: 1;
+}
+/* Стиль для модального оверлея */
