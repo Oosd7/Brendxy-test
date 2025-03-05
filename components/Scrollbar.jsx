@@ -2,13 +2,18 @@ import React from "react";
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import CustomScrollContainer from './CustomScrollContainer';
-
+import first2 from '../images/int-obs/first2.png'
+import first1 from '../images/int-obs/first1.png'
+import second1 from '../images/int-obs/second1.png'
+import second2 from '/images/int-obs/second2.png'
+import second3 from '/images/int-obs/second3.png'
+import bg2 from '../images/bg2.png';
 const images = [
-    '/images/int-obs/first2.png',
-    '/images/int-obs/first1.png',
-    '/images/int-obs/second1.png',
-    '/images/int-obs/second2.png',
-    '/images/int-obs/second3.png',
+    first2,
+    first1,
+    second1,
+    second2,
+    second3,
   ];
 
   const Scrollbar = () => {
@@ -29,12 +34,12 @@ const images = [
   
     
   const firstGroupVariants = {
-    hidden: { opacity: 0, x: -150, y: 350, scale: 0.5 },
+    hidden: { opacity: 0, x: -100, y: 250, scale: 0.5 },
     visible: {
       opacity: [0, 0.5, 1], 
       x: -350,
-      y: 130,
-      scale: 5,
+      y: 150,
+      scale: 5.5,
       transition: { duration: 2 },
     },
   };
@@ -44,14 +49,14 @@ const images = [
     visible: {
       opacity: [0, 0.5, 1], 
       x: -250,
-      y: 170,
+      y: 150,
       scale: 3,
       transition: { duration: 2.5 }, 
     },
   };
     return (
         
-        <div className="section" ref={ref} style = {{backgroundImage:'url(../images/bg2.png)'}}>
+        <div className="section" ref={ref} style = {{backgroundImage:`url(${bg2})`}}>
             <div className="section__inner">
                 <div className="subtitles">
                     <span className="subtitles__item">Текст</span>

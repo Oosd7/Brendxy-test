@@ -4,11 +4,9 @@
     height: 400px;
     overflow: hidden;
     z-index: 100;
-    
+    padding-left: 80px;
    
   }
-
-  
   .content {
     width: 800px;
     height: auto;
@@ -29,9 +27,9 @@
     flex-direction: column;
     row-gap: 100px;
     font-family: "DINPro";
-    padding-left: 50px;
-    
+    padding-left: 40px;
   }
+
 .subtitles{
     font-size: 36px;
     display: flex;
@@ -57,25 +55,28 @@
   
   .scrollbar-track {
     flex: 1;
-    background: #000; /* Черный цвет полоски */
-    border-radius: 10px;
+    background: #000; 
+    border-radius: 5px;
+    width: 7px;
     margin: 5px;
     position: relative;
-    cursor: pointer; /* Улучшаем взаимодействие */
+    cursor: pointer; 
+    right: -10px;
   }
   
   .scrollbar-thumb {
-    width: 40px;
-    height: 30%;
-    background: #ff69b4; /* Розовый цвет ползунка */
+    width: 25px;
+    height: 37%;
+    background: #ff69b4; 
     border-radius: 20px;
-    cursor: grab; /* Изменяем курсор для улучшения взаимодействия */
+    border:1px solid black;
+    cursor: grab; 
     position: absolute;
     top: 0;
-    left:-10px;
-    touch-action: none; /* Отключаем стандартные действия при касании */
+    left:-8px;
+    touch-action: none; 
   }
   
   .scrollbar-thumb.active {
-    cursor: grabbing; /* Изменяем курсор при перетаскивании */
+    cursor: grabbing; 
   }

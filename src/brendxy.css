@@ -13,7 +13,7 @@
 .brendxy__inner{
     display: flex;
     column-gap: 50px;
-    max-width: 600px;
+    max-width: 800px;
 }
 .brendxy__inner-box1{
     z-index: 0;
@@ -31,7 +31,7 @@
 .brendxy__inner-box2{
     z-index: 0;
     position: relative;
-    max-width: 800px;
+    max-width: 250px;
     border-radius: 20%;
     background: white;
     box-shadow: 5.446px 8.387px 232.5px 17.5px rgba(157, 185, 198, 0.39);
@@ -42,10 +42,11 @@
 .brendxy__inner-box2-element{
     display: flex;
     flex-direction: column;
+    max-width: 500px;
     row-gap: 30px;
 }
 .brendxy__button{
-    width: 180px;
+    width: 280px;
     z-index: 1000;
 
 }
@@ -93,4 +94,4 @@
     position: absolute;
     z-index: 1;
 }
-/* Стиль для модального оверлея */
+

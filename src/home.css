@@ -20,10 +20,12 @@
     font-size: 2rem;
     max-width: 2050px;
     max-height: 1536px;
+    background-image: url(/images/bg1.jpg);
 }
 .section__inner{
     display: flex;
     flex-direction: column;
+    /* background-image: url(/images/bg1.jpg); */
 }
 .blue-ball{
     position: absolute;

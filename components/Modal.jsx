@@ -2,17 +2,24 @@ import React, {useState} from 'react';
 import '../src/modal.css'; 
 import bottleImage from '../images/bottle.png'; 
 import DynamicBalls from './DynamicBalls';
-
+import bb1 from '../images/bubbles/1b.png';
+import bb2 from '../images/bubbles/2b.png';
+import bb3 from '../images/bubbles/3b.png';
+import bb4 from '../images/bubbles/4b.png';
+import bb5 from '../images/bubbles/5b.png';
+import rb1 from '../images/bubbles/1r.png';
+import rb2 from '../images/bubbles/2r.png';
+import rb3 from '../images/bubbles/3r.png';
 const balls = [
-    { id: 'bub1', top: '7%', left: '17%',backgroundImage:'url(../images/bubbles/1b.png)',width: 74, height: 76,animate:{x:[0,50,0],y:[0,10,0]},zIndex:100,scaleVar:'--scale' },
-    { id: 'bub2', top: '17%', left: '17%',backgroundImage:'url(../images/bubbles/2b.png)',width: 136, height: 138,animate:{x:[0,-70,0],y:[0,-50,0],rotate:-30},zIndex:100,scaleVar:'--scale'},
-    { id: 'bub3', top: '50%', left: '0%',backgroundImage:'url(../images/bubbles/3b.png)',width: 66, height: 66,animate:{x:[0,50,0],y:[0,70,0]},zIndex:1,scaleVar:'--scale'},
-    { id: 'bub4', top: '75%', left: '25%',backgroundImage:'url(../images/bubbles/4b.png)',width: 123, height: 123,animate:{x:[0,-30,0],y:[0,-30,0]},zIndex:0,scaleVar:'--scale'},
-    { id: 'bub5', top: '17%', left: '6%',backgroundImage:'url(../images/bubbles/1r.png)',width: 68, height: 68,animate:{x:[0,30,0],y:[0,20,0]},zIndex:0,scaleVar:'--scale' },
-    { id: 'bub6', top: '90%', left: '20%',backgroundImage:'url(../images/bubbles/5b.png)',width: 285, height: 130,animate:{y:[0,-10,0]},zIndex:100,scaleVar:'--scale'},
-    { id: 'bub7', top: '30%', left: '15%',backgroundImage:'url(../images/bubbles/2r.png)',width: 225, height: 224,animate:{x:[0,25,0],y:[0,5,0]},zIndex:0,scaleVar:'--scale'},
-    { id: 'bub8', top: '75%', left: '5%',backgroundImage:'url(../images/bubbles/3r.png)',width: 149, height: 149,animate:{x:[0,-80,0],y:[0,-30,0]},zIndex:1,scaleVar:'--scale'},
-  ];
+        { id: 'bub1', top: '7%', left: '17%',backgroundImage:`url(${bb1})`,width: 74, height: 76,animate:{x:[0,50,0],y:[0,10,0]},zIndex:100,scaleVar:'--scale' },
+        { id: 'bub2', top: '17%', left: '17%',backgroundImage:`url(${bb2})`,width: 136, height: 138,animate:{x:[0,-70,0],y:[0,-50,0],rotate:-30},zIndex:100,scaleVar:'--scale'},
+        { id: 'bub3', top: '50%', left: '0%',backgroundImage:`url(${bb3})`,width: 66, height: 66,animate:{x:[0,50,0],y:[0,70,0]},zIndex:1,scaleVar:'--scale'},
+        { id: 'bub4', top: '75%', left: '25%',backgroundImage:`url(${bb4})`,width: 123, height: 123,animate:{x:[0,-30,0],y:[0,-30,0]},zIndex:0,scaleVar:'--scale'},
+        { id: 'bub5', top: '17%', left: '6%',backgroundImage:`url(${rb1})`,width: 68, height: 68,animate:{x:[0,30,0],y:[0,20,0]},zIndex:0,scaleVar:'--scale' },
+        { id: 'bub6', top: '90%', left: '20%',backgroundImage:`url(${bb5})`,width: 285, height: 130,animate:{y:[0,-10,0]},zIndex:100,scaleVar:'--scale'},
+        { id: 'bub7', top: '30%', left: '15%',backgroundImage:`url(${rb2})`,width: 225, height: 224,animate:{x:[0,25,0],y:[0,5,0]},zIndex:0,scaleVar:'--scale'},
+        { id: 'bub8', top: '75%', left: '5%',backgroundImage:`url(${rb3})`,width: 149, height: 149,animate:{x:[0,-80,0],y:[0,-30,0]},zIndex:1,scaleVar:'--scale'},
+      ];
 
 const Modal = ({ onClose }) => {
     const [currentSlide, setCurrentSlide] = useState(0);
