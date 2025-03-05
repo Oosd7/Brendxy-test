@@ -1,12 +1,10 @@
-# React + Vite
+# BrendXY
+  Вёрстка тестового задания для разрешения 1024x768, сайт не адаптировался для других разрешений(.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Использованные технологии:
+  React, css(vanilla), vite
+### Основное пояcнение:
+  Из реакта использовал framer-motion API, react-intersection-observer API, хуки useState, useRef.
+  Слайды реализовал при помощи обёртки horisontal-scroll-container и свойства scroll-snap-type. Начальный слайд - компонент Home, анимацию движущихся объектов реализовал при помощи framer motion и компонента DynamicBalls. При нажатии на кнопку переход на второй слайд Scrollbar. В компоненте Scrollbar реализовал кастомный скролл через компонент CustomScrollContainer. Появление анимации на втором слайде реализовал с помощью intersection observer useInView. Третий слайд - Brendxy, движущиеся пузырики реализовал с помощью уже написанного компонента DynamicBalls, при нажатии на кнопку поялвяется модальное окно, которое я реализовал в компоненте Modal. Думаю, что мой код получился немного грязноватым, также я думаю во многих местах можно было реализовать логику намного проще, мне было тяжело, потому что я не так хорошо знаю реакт и очень редко до этого пользовался PS.
+### Ссылка на github pages
+https://oosd7.github.io/Brendxy-test/
