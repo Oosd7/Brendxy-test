@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import '../src/scrollbar.css';
+
 
 const CustomScrollContainer = ({ children }) => {
   const contentRef = useRef(null);
@@ -53,9 +53,13 @@ const CustomScrollContainer = ({ children }) => {
 
   return (
     <div className="scroll-container">
+      <div className="content__inner">
       <div className="content" ref={contentRef} onScroll={updateThumbPosition}>
+      
         {children}
       </div>
+      </div>
+     
       <div className="custom-scrollbar">
         <div className="scrollbar-track" ref={trackRef} onMouseDown={handleMouseDown} onTouchStart={handleMouseDown}>
           <div className="scrollbar-thumb" ref={thumbRef}></div>

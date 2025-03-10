@@ -1,6 +1,6 @@
 .scroll-container {
     position: relative;
-    width: 800px;
+    width: 850px;
     height: 400px;
     overflow: hidden;
     z-index: 100;
@@ -10,17 +10,32 @@
   .content {
     width: 800px;
     height: auto;
-    position: absolute;
+    position: relative;
     top: 0;
     right: -50px;
     width: calc(100% - 40px);
     height: 100%;
     overflow: hidden;
-    padding-right: 20px;
-    border-radius: 10%;
+    /* padding-right: 20px; */
+    border-radius: 5%;
+    /* background: white; */
+    padding-bottom: 70px;
+    /* box-shadow: 5.446px 8.387px 232.5px 17.5px rgba(157, 185, 198, 0.39); */
+    /* padding: 40px;  */
+  }
+  .content__inner{
+    padding: 10px;
+    padding-right: 20px;  
+    border-radius: 7%;
+    position: absolute;
+    width: 800px;
+    height: 400px;
     background: white;
-    box-shadow: 5.446px 8.387px 232.5px 17.5px rgba(157, 185, 198, 0.39);
-    padding: 20px; 
+    padding-bottom: 30px;
+  }
+  .content__text{
+    padding: 15px;
+   height: 400px;
   }
   .section__inner{
     display: flex;
